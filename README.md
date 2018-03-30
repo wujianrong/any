@@ -28,13 +28,18 @@ git clone https://github.com/lanceWan/any.git
 ```
 cd any
 
-composer install
-```
-
 配置 `.env` 文件：
 ```
 [sudo]cp .env.example .env
+ 
+在.evn文件中的app_key增加key值
+APP_KEY=base64:NuEhv7RkX8o2JQecwCr2RngNG2UYsAMqI8ZnjjI1sZU=
+
 ```
+composer install
+```
+安装 laracasts/flash
+composer require laracasts/flash
 
 > Linux 和 Mac 下注意执行权限 !
 
